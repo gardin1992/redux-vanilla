@@ -1,0 +1,36 @@
+{
+  "name": "redux-vanilla",
+  "version": "0.1.0",
+  "description": "gh-pages site personal",
+  "homepage": "gardin1992.github.io/redux-vanilla",
+  "main": "gulpfile.js",
+  "scripts": {
+    "serve": "php -S localhost:8080",
+    "default": "gulp default",
+    "scss": "node-sass -w --include-path node_modules src/sass/*.scss -o public/css"
+  },
+  "dependencies": {
+    "material-components-web": "^0.27.0",
+    "redux": "^3.7.2",
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gardin1992/redux-vanilla"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Joao Gardin <gardin1992@gmail.com>",
+  "license": "MIT"
+}

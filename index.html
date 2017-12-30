@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Joao Gardin - github.io</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./public/css/core.css" rel="stylesheet">
+    <script data-main="dist/js/main.js" src="./node_modules/requirejs/require.js"></script>
+
+</head>
+<body class="dd-body">
+
+<aside class="mdc-persistent-drawer">
+
+    <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer"></div>
+        <div class="mdc-list-group">
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-persistent-drawer--selected" href="#" data-mdc-tabindex-handled="true"
+                   tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true"></i>Functional Programming
+                </a>
+                <a class="mdc-list-item mdc-persistent-drawer--selected" href="#" data-mdc-tabindex-handled="true"
+                   tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true"></i>Data Science
+                </a>
+                <a class="mdc-list-item mdc-persistent-drawer--selected" href="#" data-mdc-tabindex-handled="true"
+                   tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true"></i>Redux
+                </a>
+                <a class="mdc-list-item mdc-persistent-drawer--selected" href="#" data-mdc-tabindex-handled="true"
+                   tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true"></i>Mobile First
+                </a>
+                <a class="mdc-list-item mdc-persistent-drawer--selected" href="#" data-mdc-tabindex-handled="true"
+                   tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true"></i>Progressive Web
+                </a>
+            </nav>
+            <hr class="mdc-list-divider">
+
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-persistent-drawer--selected" href="#" data-mdc-tabindex-handled="true"
+                   tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                </a>
+                <a class="mdc-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                </a>
+                <a class="mdc-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                </a>
+                <a class="mdc-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                </a>
+            </nav>
+
+            <hr class="mdc-list-divider">
+
+            <nav class="mdc-list">
+                <a class="mdc-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                </a>
+                <a class="mdc-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                </a>
+                <a class="mdc-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Spam
+                </a>
+            </nav>
+        </div>
+    </nav>
+
+</aside>
+
+<div class="dd-content">
+
+    <header class="mdc-toolbar mdc-elevation--z4">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+            <span>
+              <a href="/" class="mdc-toolbar__menu-icon"><i class="material-icons"></i></a>
+            </span>
+                <button class="demo-menu material-icons mdc-toolbar__menu-icon">menu</button>
+                <span class="mdc-toolbar__title catalog-title">Persistent Drawer</span>
+            </section>
+        </div>
+    </header>
+
+    <main class="dd-main">
+
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell"></div>
+                <div class="mdc-layout-grid__cell"></div>
+                <div class="mdc-layout-grid__cell"></div>
+            </div>
+        </div>
+
+        <section>
+
+            <h1 class="mdc-typography--display1">Persistent Drawer</h1>
+
+            <p class="mdc-typography--body1">Click the menu icon above to open and close the drawer.</p>
+        </section>
+
+        <section>
+
+            <h2>Redux</h2>
+            <p>Passar o dispatch para o evento vinculado.</p>
+
+        </section>
+
+        <section>
+
+            <h3>States Log</h3>
+
+            <button id="btnBlog" class="mdc-button">
+                <i class="material-icons mdc-button__icon">favorite</i>
+                Blog
+            </button>
+
+            <button id="btnDashboard" class="mdc-button">
+                <i class="material-icons mdc-button__icon">dashboard</i>
+                Dashboard
+            </button>
+
+            <div id="response">
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

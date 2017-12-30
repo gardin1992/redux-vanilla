@@ -1,0 +1,17 @@
+@import "./demo";
+
+html {
+  height: 100%;
+}
+
+.dd-body {
+  @extend .demo-body;
+}
+
+.dd-content {
+  @extend .demo-content;
+}
+
+.dd-main {
+  @extend .demo-main;
+}
