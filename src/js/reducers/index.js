@@ -2,7 +2,6 @@ define(function (require, exports, module) {
 
     const {combineReducers} = require('redux');
 
-    const posts = require('./posts');
     const blog = require('./blog');
 
     const dashboard = (state = {view: ``}, action) => {
@@ -27,7 +26,6 @@ define(function (require, exports, module) {
     const lastAction = (state = '', action) => action;
 
     module.exports = combineReducers({
-        posts,
         blog,
         dashboard,
         lastAction

@@ -1,0 +1,1 @@
+define(function(require,exports,module){var t=require("utils/dd"),n=require("./app_exports"),e={btnBlog:{node:t.q("#btnBlog"),state:"blog",action:"view",event:"click"},btnDashboard:{node:t.q("#btnDashboard"),state:"dashboard",action:"view",event:"click"}};module.exports=function(t){n(t,e)}});

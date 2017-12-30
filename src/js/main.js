@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl: '/dist/js',
+    baseUrl: '/public/js',
     paths: {
         node_modules: '/node_modules',
         redux: [
@@ -26,5 +26,4 @@ requirejs.config({
     //     },
     // }
 });
-
 requirejs(['root']);

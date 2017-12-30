@@ -1,0 +1,1 @@
+define(["reactRedux"],function(e){return(0,e.connect)(function(e){var t=e.selectedSubreddit,d=e.postsBySubreddit[t]||{isFetching:!0,items:[]},i=d.isFetching,s=d.lastUpdated;return{selectedSubreddit:t,posts:d.items,isFetching:i,lastUpdated:s}})(void 0)});

@@ -1,9 +1,27 @@
 const gulp = require('gulp'),
-    babel = require('gulp-babel');
+    babel = require('gulp-babel'),
+    uglify = require('gulp-uglify'),
+    pump = require('pump');
+
 
 const paths = {
-    scripts: ['./src/js/**', './src/js/**/*.js']
+    scripts: ['./src/js/**', './src/js/**/*.js'],
+    compress: ['dist/js/**/*.js']
 };
+
+gulp.task('compress', function (cb) {
+    pump([
+            gulp.src(paths.compress),
+            uglify({
+                mangle: {
+                    reserved: ['require', 'exports', 'module']
+                }
+            }),
+            gulp.dest('public/js')
+        ],
+        cb
+    );
+});
 
 gulp.task('scripts', function () {
 
@@ -19,8 +37,9 @@ gulp.task('scripts', function () {
 gulp.task('watch', function () {
 
     gulp.watch(paths.scripts, ['scripts']);
+    gulp.watch(paths.compress, ['compress']);
 
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['watch', 'scripts']);
+gulp.task('default', ['watch']);

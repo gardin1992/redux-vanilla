@@ -1,0 +1,1 @@
+define(function(require,exports,module){module.exports={types:{view:"DASHBOARD_VIEW",content:"DASHBOARD_CONTENT"},view:function(n){return{type:"DASHBOARD_VIEW",payload:n}},content:function(n){return{type:"DASHBOARD_CONTENT",payload:n}}}});

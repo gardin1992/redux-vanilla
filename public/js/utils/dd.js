@@ -1,0 +1,1 @@
+define({q:function(e){return document.querySelector(e)}});

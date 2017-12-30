@@ -1,0 +1,1 @@
+define(function(require,exports,module){module.exports={types:{view:"BLOG_VIEW",content:"BLOG_CONTENT"},view:function(n){return{type:"BLOG_VIEW",payload:n}},content:function(n){return{type:"BLOG_CONTENT",payload:n}}}});

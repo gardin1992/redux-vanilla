@@ -1,0 +1,1 @@
+define(function(require,exports,module){var e=require("redux").createStore,r=require("reducers/index");module.exports=function(n){return e(r,n)}});

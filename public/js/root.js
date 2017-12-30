@@ -1,0 +1,1 @@
+define(function(require){var n=require("stores/index");require("containers/App")(n({}))});

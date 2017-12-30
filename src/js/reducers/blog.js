@@ -1,7 +1,5 @@
 define(function (require, exports, module) {
 
-    const {BLOG_VIEW} = require('actionsTypes/blog');
-
     module.exports = (state = {view: ``}, action) => {
 
         switch (action.type) {

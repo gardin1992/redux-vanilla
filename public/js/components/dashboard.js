@@ -1,0 +1,1 @@
+define(function(require,exports,module){module.exports={view:"\n    \n        <h2> Dashboard View </h2>\n    \n    ",content:"\n    \n        <h2> Dashboard Content </h2>\n    \n    "}});
